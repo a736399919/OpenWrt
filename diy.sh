@@ -15,9 +15,9 @@ cp -rf lede/package/lean package/lean
 #cp -rf openwrt/package/firmware/ipq-wifi package/firmware/ipq-wifi
 sed -i '45,48d' package/lean/default-settings/files/zzz-default-settings
 #添加Lienol的插件包
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-./scripts/feeds update -a
-./scripts/feeds install -a
+#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+#./scripts/feeds update -a
+#./scripts/feeds install -a
 #添加自定义插件
 #git clone https://github.com/Ameykyl/luci-app-koolproxyR.git package/luci-app-koolproxyR
 #git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
